@@ -17,8 +17,4 @@ function onTick(){
 // Starts a Blood MOon - Summons Zombies
 function startMoon(){
   let players = world.getPlayers()
-  for i in players(){
-    let coords = players.i.getCoordinates()
-    commands.Run("summon zombie" + coords, World.getDimensions("overworld"))
-  }
 }
