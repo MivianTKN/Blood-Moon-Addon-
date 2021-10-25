@@ -1,0 +1,37 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Blood Moons Addon",
+		"description": "(ENABLE THE GAMETEST EXPERMENTAL FEATURE) This addon adds blood moons into the game!",
+		"min_engine_version": [1, 16, 210],
+		"uuid": "250d14a2-4c90-4f46-837c-7afd10f099c4",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "data",
+			"uuid": "42651ba5-6619-4547-9d48-84a5a37cf2a3",
+			"version": [1, 0, 0]
+		},
+		{
+			"description": "",
+			"uuid": "239c134f-67bf-4738-9bcc-8c69d31b1f72",
+			"version": [1, 0, 0],
+			"type": "javascript",
+			"entry": "scripts/Main.js"
+		}
+	],
+	"dependencies": [
+		{
+			// Minecraft native module - needed to use the "mojang-minecraft" module
+			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+			"version": [0, 1, 0]
+		},
+		{
+			// GameTest native module - needed to use the "mojang-gametest" module
+			"uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+			"version": [0, 1, 0]
+		}
+	]
+}
