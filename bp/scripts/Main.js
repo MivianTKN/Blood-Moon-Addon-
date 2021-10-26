@@ -17,4 +17,10 @@ function onTick(){
 // Starts a Blood MOon - Summons Zombies
 function startMoon(){
   let players = world.getPlayers()
+  Commands.run("say A blood moon is rising...", World.getDimension("overworld"))
+  players.forEach(spawnZombies)
+}
+function spawnZombies(player){
+  locations = player.location
+  Commands.run("execute " + player.nameTag + " summon zombie", World.getDimension("overworld"))
 }
